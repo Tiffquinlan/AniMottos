@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AniMottos — Growing Minds, Grounded Values</title>
+  <style>
+    :root{--accent:#4aa3a3;--accent-2:#f2b705;--bg:#f6fbfb;--card:#ffffff;--muted:#657780}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#123;}
+    header{background:linear-gradient(90deg,var(--accent),#6fc3c3); color:white; padding:28px 20px;}
+    .container{max-width:1000px;margin:0 auto;padding:20px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:68px;height:68px;display:grid;place-items:center;background:rgba(255,255,255,0.13);border-radius:16px}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0 0;opacity:0.95}
+    main{padding:28px 0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,40,44,0.06)}
+    .hero{display:flex;gap:18px;align-items:center}
+    .hero img{max-width:220px;border-radius:12px}
+    .cta{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:10px;background:var(--accent-2);color:#123;font-weight:600;text-decoration:none}
+    ul.values{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:8px 0 0;list-style:none}
+    ul.values li{background:#eef9f9;padding:8px 12px;border-radius:999px;color:#0b3b3b;font-weight:600}
+    footer{padding:24px 0;color:var(--muted);font-size:0.9rem}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}.hero{flex-direction:column}.logo{width:56px;height:56px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden>
+          <!-- simple pebble/otter-ish svg -->
+          <svg width="44" height="44" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="12" fill="white" opacity="0.06"/>
+            <circle cx="32" cy="28" r="12" fill="white" opacity="0.18"/>
+            <path d="M22 40c3-2 6-3 10-3s7 1 10 3c-2 6-6 9-10 9s-8-3-10-9z" fill="white" opacity="0.18"/>
+          </svg>
+        </div>
+        <div>
+          <h1>AniMottos</h1>
+          <p class="lead">Growing Minds, Grounded Values — discover your Animal Motto.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div class="card">
+        <div class="hero">
+          <div style="flex:1">
+            <h2>Find your Motto — and your animal friend</h2>
+            <p>Take a playful quiz and unlock a friendly AniMotto that fits how you like to learn and grow.</p>
+            <a class="cta" href="#" onclick="startQuiz(event)">Start the Adventure</a>
+            <ul class="values" aria-hidden>
+              <li>Curiosity</li>
+              <li>Kindness</li>
+              <li>Bravery</li>
+              <li>Creativity</li>
+              <li>Persistence</li>
+            </ul>
+          </div>
+          <div style="width:220px;display:flex;justify-content:center;align-items:center">
+            <!-- mascot placeholder card -->
+            <div style="background:linear-gradient(180deg,#fff 0%, #f0fbfb 100%);border-radius:12px;padding:12px;width:180px;text-align:center">
+              <svg width="120" height="120" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                <g fill="none" fill-rule="evenodd">
+                  <ellipse cx="32" cy="36" rx="20" ry="14" fill="#F7CFA6"/>
+                  <circle cx="24" cy="30" r="6" fill="#fff" opacity="0.6"/>
+                  <circle cx="40" cy="30" r="6" fill="#fff" opacity="0.6"/>
+                  <path d="M20 38c4 3 12 3 24 0" stroke="#8B5E3C" stroke-width="2" stroke-linecap="round"/>
+                </g>
+              </svg>
+              <div style="margin-top:8px;font-weight:700">Pebble the Otter</div>
+              <div style="font-size:13px;color:#6b7f80;margin-top:6px">Playful. Curious. Kind.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>How AniMottos works</h3>
+        <p>We help kids learn about their strengths through short games and stories. Each child gets an animal, a short motto, and a small mission to try each week.</p>
+        <ol>
+          <li>Play a fun quiz (stories, drag & drop, pick-a-path)</li>
+          <li>Meet your AniMotto and motto card</li>
+          <li>Try weekly missions & collect badges</li>
+        </ol>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#" onclick="alert('Quiz placeholder')">Take the Quiz</a></li>
+          <li><a href="#" onclick="alert('Resources placeholder')">Download Printables</a></li>
+          <li><a href="#" onclick="alert('Classroom tools')">Teacher & Parent Guide</a></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section style="margin-top:18px" class="card">
+      <h3>Popular mottos</h3>
+      <p>Short mottos kids can say every day.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span style="background:#eaf9f9;padding:10px 12px;border-radius:8px;font-weight:700">Be Kind. Be Brave.</span>
+        <span style="background:#fff6e8;padding:10px 12px;border-radius:8px;font-weight:700">Think it through, find a way.</span>
+        <span style="background:#f5f7ff;padding:10px 12px;border-radius:8px;font-weight:700">Keep going, step by step.</span>
+        <span style="background:#eef7f2;padding:10px 12px;border-radius:8px;font-weight:700">Help others shine.</span>
+      </div>
+    </section>
+
+    <section style="margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <div class="card">
+        <h3>Teacher & Parent Tips</h3>
+        <p>Quick activities to try: morning motto check-in, pebble picks, and weekly reflection circles.</p>
+        <ul>
+          <li>Display motto cards where kids can see them.</li>
+          <li>Use a "Pebble Path" to celebrate values.</li>
+          <li>Play short 5-minute reflection games.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Join the AniMottos Club</h3>
+        <p>Sign up to get free lesson plans, printables, and mascot stickers.</p>
+        <form onsubmit="event.preventDefault();alert('Thanks! Sign-up placeholder')">
+          <div style="display:flex;gap:8px">
+            <input aria-label="email" placeholder="Email" style="flex:1;padding:10px;border-radius:8px;border:1px solid #e4f0ef" />
+            <button style="padding:10px 12px;border-radius:8px;border:0;background:var(--accent);color:white;font-weight:700">Join</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>© AniMottos — Growing Minds, Grounded Values</div>
+      <div style="opacity:0.8">Made with care • Classroom-friendly</div>
+    </div>
+  </footer>
+
+  <script>
+    function startQuiz(e){e.preventDefault();alert('This would start the AniMottos quiz — placeholder for interactive build.');}
+  </script>
+</body>
+</html>
